@@ -19,9 +19,9 @@ func get_level_data() -> Dictionary:
 		],
 		"outcomes": {
 			1: {"injury_chance": 50, "medkit_chance": 30, "injury_amount": 20, "member_index": 0, "member_name": "George"},
-			2: {"injury_chance": 50, "medkit_chance": 30, "injury_amount": 20, "member_index": 1, "member_name": "Alice"},
-			3: {"injury_chance": 50, "medkit_chance": 30, "injury_amount": 20, "member_index": 2, "member_name": "Bob"},
-			4: {"injury_chance": 50, "medkit_chance": 30, "injury_amount": 20, "member_index": 3, "member_name": "Eve"},
+			2: {"injury_chance": 50, "medkit_chance": 30, "injury_amount": 20, "member_index": 1, "member_name": "John"},
+			3: {"injury_chance": 50, "medkit_chance": 30, "injury_amount": 20, "member_index": 2, "member_name": "David"},
+			4: {"injury_chance": 50, "medkit_chance": 30, "injury_amount": 20, "member_index": 3, "member_name": "Mark"},
 			5: {}
 		}
 	}

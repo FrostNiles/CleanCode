@@ -1,9 +1,11 @@
 extends Node
 
 signal medkits_changed  
+signal morale_changed  
 
 var health_values = [100, 100, 100, 100]
-var medkits = 5  
+var medkits = 2
+var morale = 80
 
 func change_health(member_index: int, amount: int):
 	if member_index >= 0 and member_index < health_values.size():
@@ -26,3 +28,10 @@ func use_medkit(member_index: int) -> bool:
 			emit_signal("medkits_changed")
 			return true
 	return false
+
+func change_morale(amount: int):
+	morale = clamp(morale + amount, 0, 100)
+	emit_signal("morale_changed")
+
+func get_morale() -> int:
+	return morale

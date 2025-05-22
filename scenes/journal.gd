@@ -9,6 +9,7 @@ signal decision_made(selected_choice : int)
 @onready var button_4 = $Panel/Button4
 @onready var button_5 = $Panel/Button5
 @onready var medkit_label = $Panel/MedkitLabel
+@onready var morale_label = $Panel/MoraleLabel
 
 @onready var health_bars = [
 	$VBoxContainer/HealthBar1,
@@ -27,7 +28,9 @@ func _ready():
 	button_5.pressed.connect(_on_choice_5)
 
 	Healthbars.medkits_changed.connect(_update_medkit_label)
+	Healthbars.morale_changed.connect(_update_morale_label)
 	_update_health_bars()
+	_update_morale_label()
 
 func set_journal_text(text : String):
 	text_box.text = text
@@ -45,20 +48,11 @@ func set_choice_texts(choice1 : String, choice2 : String, choice3 : String = "",
 	button_4.visible = choice4 != ""
 	button_5.visible = choice5 != ""
 
-func _on_choice_1():
-	_process_choice(1)
-
-func _on_choice_2():
-	_process_choice(2)
-
-func _on_choice_3():
-	_process_choice(3)
-
-func _on_choice_4():
-	_process_choice(4)
-
-func _on_choice_5():
-	_process_choice(5)
+func _on_choice_1(): _process_choice(1)
+func _on_choice_2(): _process_choice(2)
+func _on_choice_3(): _process_choice(3)
+func _on_choice_4(): _process_choice(4)
+func _on_choice_5(): _process_choice(5)
 
 func _process_choice(choice_id : int):
 	button_1.visible = false
@@ -83,6 +77,11 @@ func _update_health_bars():
 func _update_medkit_label():
 	if medkit_label:
 		medkit_label.text = "Lékárničky: %d" % Healthbars.medkits
-		
+
+func _update_morale_label():
+	if morale_label:
+		morale_label.value = Healthbars.get_morale()
+
+
 func set_choice_result_texts(result1 : String, result2 : String, result3 : String = "", result4 : String = "", result5 : String = ""):
-	pass
+	pass  

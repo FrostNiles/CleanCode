@@ -18,20 +18,28 @@ func apply_choice_effect(choice_id: int) -> void:
 	var result_text = ""
 	var rand = randi() % 100
 
-	if outcomes.has(choice_id):
+	if outcomes.has(choice_id) and !outcomes[choice_id].is_empty():
 		var outcome = outcomes[choice_id]
+		var member_name = outcome.get("member_name", "Člen")
+
+		
+		Healthbars.change_morale(10)
+
 		if rand < outcome["injury_chance"]:
 			Healthbars.change_health(outcome["member_index"], -outcome["injury_amount"])
-			result_text = "%s byl zraněn!" % outcome.get("member_name", "Člen")
+			result_text = "%s byl zraněn!" % member_name
 		elif rand < outcome["injury_chance"] + outcome["medkit_chance"]:
 			Healthbars.add_medkit(1)
-			result_text = "%s našel lékárničku!" % outcome.get("member_name", "Člen")
+			Healthbars.change_morale(5)  
+			result_text = "%s našel lékárničku!" % member_name
 		else:
-			result_text = "%s se vrátil bez zranění." % outcome.get("member_name", "Člen")
+			result_text = "%s se vrátil bez zranění." % member_name
 	else:
+		Healthbars.change_morale(-10)
 		result_text = "Nikdo nevyrazil."
 
 	journal.set_journal_text(result_text)
+
 # Initialization logic
 func _ready():
 	randomize()
