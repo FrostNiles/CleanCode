@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://cg3mhmc64mj25"]
+
+[ext_resource type="Script" uid="uid://boetfqn7lqaxf" path="res://scenes/level_2.gd" id="1_if4l3"]
+[ext_resource type="PackedScene" uid="uid://bjrmc0tl3hml" path="res://scenes/Journal.tscn" id="2_4038r"]
+
+[node name="Level2" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_if4l3")
+
+[node name="Journal" parent="." instance=ExtResource("2_4038r")]
+layout_mode = 1
+offset_left = -52.0
+offset_top = 11.0
+offset_right = -52.0
+offset_bottom = 11.0
+
+[node name="ContinueButton" type="Button" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -246.0
+offset_top = -120.0
+offset_right = -159.0
+offset_bottom = -74.0
+grow_horizontal = 0
+grow_vertical = 0
