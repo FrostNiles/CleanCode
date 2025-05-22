@@ -1,29 +1,29 @@
-extends Control
+extends "res://scripts/general_level.gd"
 
-@onready var journal = $Journal
-@onready var continue_button = $ContinueButton
-
-func _ready():
-	journal.set_journal_text("Den 2: V noci byla slyšet bouřka. Něco je jinak.")
-	journal.set_choice_texts("Zkontrolovat zásoby", "Ignorovat a spát dál")
-
-	# Přiřadíme funkci zpracování efektů volby
-	journal.apply_choice_effect_func = Callable(self, "apply_choice_effect")
-
-	journal.decision_made.connect(_on_decision_done)
-
-	continue_button.visible = false
-	continue_button.pressed.connect(_on_continue_pressed)
-
-func apply_choice_effect(choice_id: int) -> void:
-	# Zpracuj dopad volby na zdraví jednotlivých členů
-	if choice_id == 1:
-		Healthbars.change_health(2, -15) 
-	elif choice_id == 2:
-		pass
-
-func _on_decision_done(selected_choice: int) -> void:
-	continue_button.visible = true
-
+func get_level_data() -> Dictionary:
+	return {
+		"journal_text": "Den 2: Zásoby dochází. Měl by někdo vyrazit na průzkum?",
+		"choices": [
+			"Vyslat George",
+			"Vyslat John",
+			"Vyslat David",
+			"Vyslat Mark",
+			"Neposílat nikoho"
+		],
+		"results": [
+			"George vyrazil.",
+			"John vyrazil.",
+			"David vyrazil.",
+			"Mark vyrazil.",
+			"Nikdo nevyrazil."
+		],
+		"outcomes": {
+			1: {"injury_chance": 50, "medkit_chance": 30, "injury_amount": 20, "member_index": 0, "member_name": "George"},
+			2: {"injury_chance": 50, "medkit_chance": 30, "injury_amount": 20, "member_index": 1, "member_name": "Alice"},
+			3: {"injury_chance": 50, "medkit_chance": 30, "injury_amount": 20, "member_index": 2, "member_name": "Bob"},
+			4: {"injury_chance": 50, "medkit_chance": 30, "injury_amount": 20, "member_index": 3, "member_name": "Eve"},
+			5: {}
+		}
+	}
 func _on_continue_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/level3.tscn")

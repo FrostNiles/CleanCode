@@ -1,9 +1,9 @@
 extends Node
 
-signal medkits_changed  # Signál pro aktualizaci UI
+signal medkits_changed  
 
 var health_values = [100, 100, 100, 100]
-var medkits = 5  # Začínáš s 5 lékárničkami
+var medkits = 5  
 
 func change_health(member_index: int, amount: int):
 	if member_index >= 0 and member_index < health_values.size():

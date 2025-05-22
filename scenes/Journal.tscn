@@ -129,11 +129,14 @@ script = ExtResource("3_xdiiq")
 [node name="HealthBar2" type="ProgressBar" parent="VBoxContainer"]
 layout_mode = 2
 script = ExtResource("3_xdiiq")
+member_index = 1
 
 [node name="HealthBar3" type="ProgressBar" parent="VBoxContainer"]
 layout_mode = 2
 script = ExtResource("3_xdiiq")
+member_index = 2
 
 [node name="HealthBar4" type="ProgressBar" parent="VBoxContainer"]
 layout_mode = 2
 script = ExtResource("3_xdiiq")
+member_index = 3

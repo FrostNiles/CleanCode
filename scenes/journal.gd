@@ -22,39 +22,67 @@ var apply_choice_effect_func : Callable = Callable()
 func _ready():
 	button_1.pressed.connect(_on_choice_1)
 	button_2.pressed.connect(_on_choice_2)
+	button_3.pressed.connect(_on_choice_3)
+	button_4.pressed.connect(_on_choice_4)
+	button_5.pressed.connect(_on_choice_5)
+
 	Healthbars.medkits_changed.connect(_update_medkit_label)
 	_update_health_bars()
 
 func set_journal_text(text : String):
 	text_box.text = text
 
-func set_choice_texts(choice1 : String, choice2 : String):
+func set_choice_texts(choice1 : String, choice2 : String, choice3 : String = "", choice4 : String = "", choice5 : String = ""):
 	button_1.text = choice1
 	button_2.text = choice2
+	button_3.text = choice3
+	button_4.text = choice4
+	button_5.text = choice5
+	
+	button_1.visible = choice1 != ""
+	button_2.visible = choice2 != ""
+	button_3.visible = choice3 != ""
+	button_4.visible = choice4 != ""
+	button_5.visible = choice5 != ""
 
 func _on_choice_1():
-	button_1.visible = false
-	button_2.visible = false
-	text_box.text = "Výsledek volby 1"
-	if apply_choice_effect_func.is_valid():
-		apply_choice_effect_func.call(1)
-	_update_health_bars()
-	emit_signal("decision_made", 1)
+	_process_choice(1)
 
 func _on_choice_2():
+	_process_choice(2)
+
+func _on_choice_3():
+	_process_choice(3)
+
+func _on_choice_4():
+	_process_choice(4)
+
+func _on_choice_5():
+	_process_choice(5)
+
+func _process_choice(choice_id : int):
 	button_1.visible = false
 	button_2.visible = false
-	text_box.text = "Výsledek volby 2"
+	button_3.visible = false
+	button_4.visible = false
+	button_5.visible = false
+	
+	text_box.text = "Výsledek volby %d" % choice_id
+	
 	if apply_choice_effect_func.is_valid():
-		apply_choice_effect_func.call(2)
+		apply_choice_effect_func.call(choice_id)
+	
 	_update_health_bars()
-	emit_signal("decision_made", 2)
+	emit_signal("decision_made", choice_id)
 
 func _update_health_bars():
-	for i in health_bars.size():
+	for i in range(health_bars.size()):
 		health_bars[i].value = Healthbars.get_health(i)
 	_update_medkit_label()
 
 func _update_medkit_label():
 	if medkit_label:
 		medkit_label.text = "Lékárničky: %d" % Healthbars.medkits
+		
+func set_choice_result_texts(result1 : String, result2 : String, result3 : String = "", result4 : String = "", result5 : String = ""):
+	pass
