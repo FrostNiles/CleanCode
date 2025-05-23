@@ -4,8 +4,8 @@ extends Control
 @onready var continue_button = $ContinueButton
 
 var outcomes = {}  
-# Override this function in child scenes to provide level-specific data
 
+# Override this function in child scenes to provide level-specific data
 func get_level_data() -> Dictionary:
 	return {
 		"journal_text": "",
@@ -13,6 +13,7 @@ func get_level_data() -> Dictionary:
 		"results": [],
 		"outcomes": {}
 	}
+
 # Called when a player makes a choice
 func apply_choice_effect(choice_id: int) -> void:
 	var result_text = ""
@@ -22,7 +23,6 @@ func apply_choice_effect(choice_id: int) -> void:
 		var outcome = outcomes[choice_id]
 		var member_name = outcome.get("member_name", "Člen")
 
-		
 		Healthbars.change_morale(10)
 
 		if rand < outcome["injury_chance"]:
@@ -45,17 +45,20 @@ func _ready():
 	randomize()
 	var data = get_level_data()
 
-	journal.set_journal_text(data["journal_text"])
+	
+	journal.set_journal_text(data.get("journal_text", ""))
+
+
 	var choices = data.get("choices", [])
-	while choices.size() < 5:
+	while choices.size() < 6:
 		choices.append("")
-	journal.set_choice_texts(choices[0], choices[1], choices[2], choices[3], choices[4])
+	journal.set_choice_texts(choices[0], choices[1], choices[2], choices[3], choices[4], choices[5])
 
 	if "results" in data:
 		var results = data["results"]
-		while results.size() < 5:
+		while results.size() < 6:
 			results.append("")
-		journal.set_choice_result_texts(results[0], results[1], results[2], results[3], results[4])
+		journal.set_choice_result_texts(results[0], results[1], results[2], results[3], results[4], results[5])
 
 	outcomes = data.get("outcomes", {})
 
@@ -69,4 +72,4 @@ func _on_decision_done(selected_choice: int) -> void:
 	continue_button.visible = true
 
 func _on_continue_pressed() -> void:
-	pass  
+	pass

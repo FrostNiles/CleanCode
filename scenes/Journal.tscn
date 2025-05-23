@@ -52,10 +52,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = 63.5
-offset_top = -63.0
-offset_right = 124.5
-offset_bottom = -21.0
+offset_left = -25.5
+offset_top = -66.0
+offset_right = 35.5
+offset_bottom = -24.0
 grow_horizontal = 2
 grow_vertical = 0
 
@@ -66,10 +66,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -97.5
-offset_top = -67.0
-offset_right = -36.5
-offset_bottom = -25.0
+offset_left = -184.5
+offset_top = -60.0
+offset_right = -123.5
+offset_bottom = -18.0
 grow_horizontal = 2
 grow_vertical = 0
 
@@ -80,10 +80,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -185.5
-offset_top = -65.0
-offset_right = -124.5
-offset_bottom = -23.0
+offset_left = -180.5
+offset_top = -147.0
+offset_right = -119.5
+offset_bottom = -105.0
 grow_horizontal = 2
 grow_vertical = 0
 
@@ -94,10 +94,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = 136.5
-offset_top = -64.0
-offset_right = 197.5
-offset_bottom = -22.0
+offset_left = 121.5
+offset_top = -67.0
+offset_right = 182.5
+offset_bottom = -25.0
 grow_horizontal = 2
 grow_vertical = 0
 
@@ -110,10 +110,10 @@ offset_bottom = 192.0
 
 [node name="Button3" type="Button" parent="Panel"]
 layout_mode = 0
-offset_left = 200.0
-offset_top = 461.0
-offset_right = 259.0
-offset_bottom = 501.0
+offset_left = 186.0
+offset_top = 372.0
+offset_right = 245.0
+offset_bottom = 412.0
 
 [node name="MoraleLabel" type="ProgressBar" parent="Panel"]
 layout_mode = 0
@@ -121,6 +121,13 @@ offset_left = 335.0
 offset_top = 249.0
 offset_right = 412.0
 offset_bottom = 304.0
+
+[node name="Button6" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 337.0
+offset_top = 370.0
+offset_right = 397.0
+offset_bottom = 414.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 0
