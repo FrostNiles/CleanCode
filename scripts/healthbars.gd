@@ -1,15 +1,17 @@
 extends Node
 
-signal medkits_changed  
-signal morale_changed  
+signal medkits_changed
+signal morale_changed
+signal game_over
 
-var health_values = [10, 0, 100, 100]
-var medkits = 100
-var morale = 10
+var health_values = [0, 10, 0, 0]
+var medkits = 3
+var morale = 5
 
 func change_health(member_index: int, amount: int):
 	if member_index >= 0 and member_index < health_values.size():
 		health_values[member_index] = clamp(health_values[member_index] + amount, 0, 100)
+		_check_game_over()
 
 func get_health(member_index: int) -> int:
 	if member_index >= 0 and member_index < health_values.size():
@@ -32,6 +34,22 @@ func use_medkit(member_index: int) -> bool:
 func change_morale(amount: int):
 	morale = clamp(morale + amount, 0, 100)
 	emit_signal("morale_changed")
+	_check_game_over()
 
 func get_morale() -> int:
 	return morale
+
+func _check_game_over():
+	
+	if morale <= 0:
+		emit_signal("game_over", "Morálka týmu klesla na nulu.")
+		return
+
+	
+	var all_dead = true
+	for hp in health_values:
+		if hp > 0:
+			all_dead = false
+			break
+	if all_dead:
+		emit_signal("game_over", "Všichni členové výpravy jsou mrtví.")

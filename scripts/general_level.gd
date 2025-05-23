@@ -40,14 +40,12 @@ func apply_choice_effect(choice_id: int) -> void:
 
 	journal.set_journal_text(result_text)
 
-# Initialization logic
 func _ready():
 	randomize()
 	var data = get_level_data()
+	Healthbars.game_over.connect(_on_game_over)
 
-	
 	journal.set_journal_text(data.get("journal_text", ""))
-
 
 	var choices = data.get("choices", [])
 	while choices.size() < 6:
@@ -73,3 +71,13 @@ func _on_decision_done(selected_choice: int) -> void:
 
 func _on_continue_pressed() -> void:
 	pass
+
+func _on_game_over(reason: String) -> void:
+	journal.set_journal_text("Konec hry: %s" % reason)
+	
+	# Odložený přechod o jeden frame
+	call_deferred("_change_to_game_over_scene")
+
+func _change_to_game_over_scene() -> void:
+	if get_tree() != null:
+		get_tree().change_scene_to_file("res://scenes/game_over_1.tscn")

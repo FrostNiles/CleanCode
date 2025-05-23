@@ -43,6 +43,11 @@ func apply_choice_effect(choice_id: int) -> void:
 			Healthbars.change_health(idx, -100)
 			Healthbars.change_morale(-15)
 			journal.set_journal_text("%s byl obětován. Morálka -15." % names[idx])
+			
+			if Healthbars.morale <= 0 or Healthbars.health_values.count(0) == Healthbars.health_values.size():
+				get_tree().change_scene_to_file("res://scenes/game_over_1.tscn")
+				return
+			
 			current_stage = "done"
 			continue_button.visible = true
 		else:
