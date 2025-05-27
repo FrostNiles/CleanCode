@@ -5,7 +5,6 @@ extends Control
 
 var outcomes = {}  
 
-# Override this function in child scenes to provide level-specific data
 func get_level_data() -> Dictionary:
 	return {
 		"journal_text": "",
@@ -14,7 +13,6 @@ func get_level_data() -> Dictionary:
 		"outcomes": {}
 	}
 
-# Called when a player makes a choice
 func apply_choice_effect(choice_id: int) -> void:
 	var result_text = ""
 	var rand = randi() % 100
@@ -66,7 +64,7 @@ func _ready():
 	continue_button.visible = false
 	continue_button.pressed.connect(_on_continue_pressed)
 
-func _on_decision_done(selected_choice: int) -> void:
+func _on_decision_done(_selected_choice: int) -> void:
 	continue_button.visible = true
 
 func _on_continue_pressed() -> void:
@@ -75,7 +73,7 @@ func _on_continue_pressed() -> void:
 func _on_game_over(reason: String) -> void:
 	journal.set_journal_text("Konec hry: %s" % reason)
 	
-	# Odložený přechod o jeden frame
+	
 	call_deferred("_change_to_game_over_scene")
 
 func _change_to_game_over_scene() -> void:

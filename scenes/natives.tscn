@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://x4ddg6nqvcb0"]
 
-[ext_resource type="Script" uid="uid://c8tcq1koxm07e" path="res://scenes/natives.gd" id="1_puruo"]
+[ext_resource type="Script" uid="uid://c8tcq1koxm07e" path="res://events/natives.gd" id="1_puruo"]
 [ext_resource type="PackedScene" uid="uid://bjrmc0tl3hml" path="res://scenes/Journal.tscn" id="2_ta88g"]
 
 [node name="Natives" type="Control"]

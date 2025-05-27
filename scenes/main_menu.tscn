@@ -1,11 +1,11 @@
 [gd_scene load_steps=9 format=3 uid="uid://dkrly0fhyywqt"]
 
-[ext_resource type="Script" uid="uid://cpqlr64esd0p1" path="res://main_menu.gd" id="1_2wh52"]
-[ext_resource type="Texture2D" uid="uid://bygx1b0hxo2bk" path="res://images/Designer (3).jpeg" id="2_ow34m"]
-[ext_resource type="FontFile" uid="uid://cugclamqnkmxf" path="res://images/28 Days Later.ttf" id="3_l72w3"]
+[ext_resource type="Script" uid="uid://cpqlr64esd0p1" path="res://main_menu.gd" id="1_bqqt6"]
+[ext_resource type="Texture2D" uid="uid://bygx1b0hxo2bk" path="res://images/Designer (3).jpeg" id="2_wu84c"]
+[ext_resource type="FontFile" uid="uid://cugclamqnkmxf" path="res://images/28 Days Later.ttf" id="3_8ln24"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_eiy7p"]
-texture = ExtResource("2_ow34m")
+texture = ExtResource("2_wu84c")
 modulate_color = Color(0.531713, 0.531713, 0.531713, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eiy7p"]
@@ -51,7 +51,7 @@ offset_right = 27.0
 offset_bottom = 6.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_2wh52")
+script = ExtResource("1_bqqt6")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -121,7 +121,7 @@ offset_right = 114.5
 offset_bottom = -126.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("3_l72w3")
+theme_override_fonts/font = ExtResource("3_8ln24")
 theme_override_font_sizes/font_size = 95
 text = "Bez signalu"
 horizontal_alignment = 1

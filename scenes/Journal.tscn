@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://bjrmc0tl3hml"]
 
-[ext_resource type="Script" uid="uid://jcepf7fa4e3s" path="res://scenes/journal.gd" id="1_imr2r"]
+[ext_resource type="Script" uid="uid://jcepf7fa4e3s" path="res://scripts/journal.gd" id="1_imr2r"]
 [ext_resource type="Texture2D" uid="uid://rvq5qou31agu" path="res://images/FelisChaus_ParchmentBackground.jpg" id="2_xdiiq"]
-[ext_resource type="Script" uid="uid://bfdemp4ycbqj7" path="res://scripts/InteractiveHealthBar.gd" id="3_xdiiq"]
+[ext_resource type="Script" uid="uid://bfdemp4ycbqj7" path="res://scripts/interactive_heatlbar.gd" id="3_xdiiq"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2tdh1"]
 texture = ExtResource("2_xdiiq")

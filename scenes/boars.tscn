@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://bcvjo7g5i3gm"]
+
+[ext_resource type="Script" uid="uid://ch8tc3sbyyplm" path="res://events/boars.gd" id="1_vkt0h"]
+
+[node name="Boars" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vkt0h")
+
+[node name="ContinueButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 998.0
+offset_top = 521.0
+offset_right = 1071.0
+offset_bottom = 564.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 222.0
+offset_top = 81.0
+offset_right = 916.0
+offset_bottom = 484.0

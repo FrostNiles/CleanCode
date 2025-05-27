@@ -40,12 +40,10 @@ func get_morale() -> int:
 	return morale
 
 func _check_game_over():
-	
 	if morale <= 0:
 		emit_signal("game_over", "Morálka týmu klesla na nulu.")
 		return
 
-	
 	var all_dead = true
 	for hp in health_values:
 		if hp > 0:

@@ -26,6 +26,7 @@ func apply_choice_effect(choice_id: int) -> void:
 				Healthbars.change_morale(10)
 				journal.set_journal_text("Domorodci vzali lékárničky a odešli v míru. Morálka +10.")
 				continue_button.visible = true
+			#!!!
 			else:
 				journal.set_journal_text("Nemáte dostatek lékárniček!")
 				continue_button.visible = false  

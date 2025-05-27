@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://cextvs88lw0dy"]
+
+[ext_resource type="Script" uid="uid://dhhnwutmjlyuq" path="res://events/medkits.gd" id="1_o23bw"]
+
+[node name="Medkits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_o23bw")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 215.0
+offset_top = 83.0
+offset_right = 786.0
+offset_bottom = 403.0
+
+[node name="ContinueButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 767.0
+offset_top = 501.0
+offset_right = 911.0
+offset_bottom = 550.0
