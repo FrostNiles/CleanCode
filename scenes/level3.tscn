@@ -1,6 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://c58onp5653dqy"]
+[gd_scene load_steps=5 format=3 uid="uid://c58onp5653dqy"]
 
 [ext_resource type="PackedScene" uid="uid://bjrmc0tl3hml" path="res://scenes/Journal.tscn" id="1_f0ip2"]
+[ext_resource type="Script" uid="uid://4ibjsfbpvukn" path="res://levels/level_3.gd" id="1_qyetb"]
+[ext_resource type="Texture2D" uid="uid://bx4ej608fmhpt" path="res://images/Designer (6).jpeg" id="1_yesqi"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qyetb"]
+texture = ExtResource("1_yesqi")
 
 [node name="Level3" type="Control"]
 layout_mode = 3
@@ -13,10 +18,27 @@ offset_right = 61.0
 offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_qyetb")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = -63.0
+offset_top = 2.0
+offset_right = 1092.0
+offset_bottom = 646.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_qyetb")
 
 [node name="Journal" parent="." instance=ExtResource("1_f0ip2")]
 layout_mode = 1
-offset_left = -68.0
-offset_top = 35.0
-offset_right = -68.0
-offset_bottom = 35.0
+offset_left = -41.0
+offset_top = 0.0
+offset_right = -41.0
+offset_bottom = 0.0
+
+[node name="ContinueButton" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 963.0
+offset_top = 555.0
+offset_right = 1043.0
+offset_bottom = 605.0

@@ -1,0 +1,81 @@
+[gd_scene load_steps=5 format=3 uid="uid://dqrxsf1v35omh"]
+
+[ext_resource type="Script" uid="uid://cro04b4b1ylje" path="res://levels/wires.gd" id="1_gtcct"]
+[ext_resource type="Texture2D" uid="uid://b54dlnl3auicf" path="res://images/magicstudio-art (3).jpg" id="2_81oka"]
+[ext_resource type="Script" uid="uid://dw8nsaqfkff4e" path="res://levels/drawing_layer.gd" id="2_h0i5q"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4cvcg"]
+texture = ExtResource("2_81oka")
+
+[node name="Wires" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gtcct")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1165.0
+offset_bottom = 697.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_4cvcg")
+
+[node name="Inputs" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(80, 60)
+layout_mode = 0
+offset_left = 160.0
+offset_top = 68.0
+offset_right = 276.0
+offset_bottom = 483.0
+theme_override_constants/separation = 115
+
+[node name="A1" type="Button" parent="Inputs"]
+custom_minimum_size = Vector2(80, 60)
+layout_mode = 2
+
+[node name="A2" type="Button" parent="Inputs"]
+custom_minimum_size = Vector2(80, 60)
+layout_mode = 2
+
+[node name="A3" type="Button" parent="Inputs"]
+custom_minimum_size = Vector2(80, 60)
+layout_mode = 2
+
+[node name="Outputs" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(80, 60)
+layout_mode = 0
+offset_left = 841.0
+offset_top = 68.0
+offset_right = 957.0
+offset_bottom = 483.0
+theme_override_constants/separation = 115
+
+[node name="B2" type="Button" parent="Outputs"]
+custom_minimum_size = Vector2(80, 60)
+layout_mode = 2
+
+[node name="B1" type="Button" parent="Outputs"]
+custom_minimum_size = Vector2(80, 60)
+layout_mode = 2
+
+[node name="B3" type="Button" parent="Outputs"]
+custom_minimum_size = Vector2(80, 60)
+layout_mode = 2
+
+[node name="SuccessLabel" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="DrawingLayer" type="Node2D" parent="."]
+script = ExtResource("2_h0i5q")
+
+[node name="ContinueButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 464.0
+offset_top = 560.0
+offset_right = 677.0
+offset_bottom = 617.0

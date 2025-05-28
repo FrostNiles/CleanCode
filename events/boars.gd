@@ -11,7 +11,7 @@ func apply_event_effect():
 
 	living.shuffle()
 	for i in range(min(2, living.size())):
-		Healthbars.change_health(living[i], -20)
+		Healthbars.change_health(living[i], -50)
 
 func get_next_scene_path() -> String:
 	var all_dead = true
@@ -22,7 +22,7 @@ func get_next_scene_path() -> String:
 	if all_dead:
 		return "res://scenes/game_over_1.tscn"
 	else:
-		return "res://scenes/level2.tscn"
+		return "res://scenes/level3.tscn"
 
 func _on_game_over(reason: String) -> void:
 	pass

@@ -7,4 +7,4 @@ func apply_event_effect():
 	Healthbars.add_medkit(2)
 
 func get_next_scene_path() -> String:
-	return "res://scenes/level2.tscn"  
+	return "res://scenes/level5.tscn"  

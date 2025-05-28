@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://t1pmey5g78np"]
+
+[ext_resource type="Script" uid="uid://c04x1pknxmslp" path="res://levels/level_5.gd" id="1_jfeem"]
+[ext_resource type="Texture2D" uid="uid://bk3cnmpph6qw" path="res://images/magicstudio-art (2).jpg" id="2_jil2c"]
+[ext_resource type="PackedScene" uid="uid://bjrmc0tl3hml" path="res://scenes/Journal.tscn" id="3_8s0yo"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fkit3"]
+texture = ExtResource("2_jil2c")
+
+[node name="Level5" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jfeem")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1202.0
+offset_bottom = 706.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_fkit3")
+
+[node name="ContinueButton" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 1020.0
+offset_top = 555.0
+offset_right = 1100.0
+offset_bottom = 605.0
+
+[node name="Journal" parent="." instance=ExtResource("3_8s0yo")]
+layout_mode = 1
+offset_left = 3.0
+offset_top = 42.0
+offset_right = 3.0
+offset_bottom = 42.0

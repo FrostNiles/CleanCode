@@ -4,7 +4,7 @@ signal medkits_changed
 signal morale_changed
 signal game_over
 
-var health_values = [10, 20, 0, 0]
+var health_values = [100, 100, 100, 100]
 var medkits = 1
 var morale = 50
 
