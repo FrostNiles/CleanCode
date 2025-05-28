@@ -2,7 +2,17 @@ extends "res://scripts/general_level.gd"
 
 func get_level_data() -> Dictionary:
 	return {
-		"journal_text": "Den 1: Zásoby dochází. Měl by někdo vyrazit na průzkum?",
+		"journal_text": """\
+Den 1:
+
+Zásoby jsou téměř pryč. Voda dochází, oheň sotva hoří.
+Noc byla neklidná – někdo slyšel kroky za táborem. Možná zvířata. Možná ne.
+
+Musíte jednat. Možná tam venku něco je – opuštěný sklad, lékárnička, šance na přežití.
+Ale cesta je nebezpečná.
+
+Kdo půjde?""",
+		
 		"choices": [
 			"Vyslat George",
 			"Vyslat John",
@@ -10,6 +20,7 @@ func get_level_data() -> Dictionary:
 			"Vyslat Mark",
 			"Neposílat nikoho"
 		],
+		
 		"results": [
 			"George vyrazil.",
 			"John vyrazil.",
@@ -17,6 +28,7 @@ func get_level_data() -> Dictionary:
 			"Mark vyrazil.",
 			"Nikdo nevyrazil."
 		],
+
 		"outcomes": {
 			1: {"injury_chance": 50, "medkit_chance": 30, "injury_amount": 20, "member_index": 0, "member_name": "George"},
 			2: {"injury_chance": 50, "medkit_chance": 30, "injury_amount": 20, "member_index": 1, "member_name": "John"},
@@ -25,6 +37,7 @@ func get_level_data() -> Dictionary:
 			5: {}
 		}
 	}
+
 
 func _on_continue_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/medkits.tscn")

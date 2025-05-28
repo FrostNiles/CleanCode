@@ -1,4 +1,11 @@
-[gd_scene format=3 uid="uid://dfafq2q4ct62f"]
+[gd_scene load_steps=4 format=3 uid="uid://dfafq2q4ct62f"]
+
+[ext_resource type="Texture2D" uid="uid://luxnv68fp6s1" path="res://images/Návrh bez názvu.jpg" id="1_xkyao"]
+[ext_resource type="FontFile" uid="uid://cugclamqnkmxf" path="res://images/28 Days Later.ttf" id="2_jexrh"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jexrh"]
+texture = ExtResource("1_xkyao")
+modulate_color = Color(0.727428, 0.727428, 0.727428, 1)
 
 [node name="GameOver1" type="Control"]
 layout_mode = 3
@@ -8,11 +15,24 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Label" type="Label" parent="."]
+[node name="Panel" type="Panel" parent="."]
 layout_mode = 0
-offset_left = 359.0
-offset_top = 171.0
-offset_right = 1065.0
-offset_bottom = 539.0
-theme_override_font_sizes/font_size = 45
+offset_right = 1158.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_jexrh")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -353.0
+offset_top = 66.0
+offset_right = 353.0
+offset_bottom = 434.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_jexrh")
+theme_override_font_sizes/font_size = 138
 text = "game over"
+horizontal_alignment = 1
+vertical_alignment = 1

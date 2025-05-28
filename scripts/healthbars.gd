@@ -4,9 +4,9 @@ signal medkits_changed
 signal morale_changed
 signal game_over
 
-var health_values = [0, 10, 0, 0]
-var medkits = 3
-var morale = 5
+var health_values = [10, 20, 0, 0]
+var medkits = 1
+var morale = 50
 
 func change_health(member_index: int, amount: int):
 	if member_index >= 0 and member_index < health_values.size():

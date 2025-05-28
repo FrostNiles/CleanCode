@@ -28,13 +28,15 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_wwpf4")
 
 [node name="Journal" parent="." instance=ExtResource("2_wwpf4")]
 layout_mode = 1
-offset_left = -69.0
-offset_right = -69.0
+offset_left = 5.0
+offset_top = 0.0
+offset_right = 5.0
+offset_bottom = 0.0
 
 [node name="ContinueButton" type="Button" parent="."]
 visible = false
 layout_mode = 0
-offset_left = 1021.0
+offset_left = 1020.0
 offset_top = 555.0
-offset_right = 1086.0
-offset_bottom = 616.0
+offset_right = 1100.0
+offset_bottom = 605.0

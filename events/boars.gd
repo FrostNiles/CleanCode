@@ -14,4 +14,15 @@ func apply_event_effect():
 		Healthbars.change_health(living[i], -20)
 
 func get_next_scene_path() -> String:
-	return "res://scenes/level1.tscn"
+	var all_dead = true
+	for hp in Healthbars.health_values:
+		if hp > 0:
+			all_dead = false
+			break
+	if all_dead:
+		return "res://scenes/game_over_1.tscn"
+	else:
+		return "res://scenes/level2.tscn"
+
+func _on_game_over(reason: String) -> void:
+	pass

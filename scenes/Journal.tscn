@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bjrmc0tl3hml"]
+[gd_scene load_steps=6 format=3 uid="uid://bjrmc0tl3hml"]
 
 [ext_resource type="Script" uid="uid://jcepf7fa4e3s" path="res://scripts/journal.gd" id="1_imr2r"]
 [ext_resource type="Texture2D" uid="uid://rvq5qou31agu" path="res://images/FelisChaus_ParchmentBackground.jpg" id="2_xdiiq"]
+[ext_resource type="FontFile" uid="uid://cytcc1l0kfhxc" path="res://images/PatrickHand-Regular.ttf" id="3_2tdh1"]
 [ext_resource type="Script" uid="uid://bfdemp4ycbqj7" path="res://scripts/interactive_heatlbar.gd" id="3_xdiiq"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2tdh1"]
@@ -12,6 +13,10 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -1.0
+offset_right = 1.0
+offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_imr2r")
@@ -40,101 +45,109 @@ offset_bottom = 74.0
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Panel"]
 layout_mode = 0
-offset_left = 18.0
-offset_top = 97.0
-offset_right = 414.0
-offset_bottom = 379.0
+offset_left = 19.0
+offset_top = 24.0
+offset_right = 338.0
+offset_bottom = 371.0
+theme_override_fonts/normal_font = ExtResource("3_2tdh1")
+theme_override_font_sizes/normal_font_size = 20
 
 [node name="Button" type="Button" parent="Panel"]
+custom_minimum_size = Vector2(60, 40)
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -25.5
-offset_top = -66.0
-offset_right = 35.5
-offset_bottom = -24.0
+offset_left = -29.5
+offset_top = -71.0
+offset_right = 30.5
+offset_bottom = -31.0
 grow_horizontal = 2
 grow_vertical = 0
 
 [node name="Button4" type="Button" parent="Panel"]
+custom_minimum_size = Vector2(60, 40)
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -184.5
-offset_top = -60.0
-offset_right = -123.5
-offset_bottom = -18.0
+offset_left = -177.5
+offset_top = -139.0
+offset_right = -117.5
+offset_bottom = -99.0
 grow_horizontal = 2
 grow_vertical = 0
 
 [node name="Button5" type="Button" parent="Panel"]
+custom_minimum_size = Vector2(60, 40)
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -180.5
-offset_top = -147.0
-offset_right = -119.5
-offset_bottom = -105.0
+offset_left = -177.5
+offset_top = -71.0
+offset_right = -117.5
+offset_bottom = -31.0
 grow_horizontal = 2
 grow_vertical = 0
 
 [node name="Button2" type="Button" parent="Panel"]
+custom_minimum_size = Vector2(60, 40)
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = 121.5
-offset_top = -67.0
-offset_right = 182.5
-offset_bottom = -25.0
+offset_left = 115.5
+offset_top = -71.0
+offset_right = 175.5
+offset_bottom = -31.0
 grow_horizontal = 2
 grow_vertical = 0
 
 [node name="MedkitLabel" type="Label" parent="Panel"]
 layout_mode = 0
-offset_left = 366.0
-offset_top = 169.0
-offset_right = 406.0
-offset_bottom = 192.0
+offset_left = 296.0
+offset_top = 326.0
+offset_right = 347.0
+offset_bottom = 359.0
 
 [node name="Button3" type="Button" parent="Panel"]
+custom_minimum_size = Vector2(60, 40)
 layout_mode = 0
-offset_left = 186.0
-offset_top = 372.0
-offset_right = 245.0
-offset_bottom = 412.0
+offset_left = 190.0
+offset_top = 386.0
+offset_right = 250.0
+offset_bottom = 426.0
 
 [node name="MoraleLabel" type="ProgressBar" parent="Panel"]
 layout_mode = 0
-offset_left = 335.0
-offset_top = 249.0
-offset_right = 412.0
-offset_bottom = 304.0
+offset_left = 368.0
+offset_top = 164.0
+offset_right = 408.0
+offset_bottom = 205.0
 
 [node name="Button6" type="Button" parent="Panel"]
+custom_minimum_size = Vector2(60, 40)
 layout_mode = 0
-offset_left = 337.0
-offset_top = 370.0
-offset_right = 397.0
-offset_bottom = 414.0
+offset_left = 335.0
+offset_top = 386.0
+offset_right = 395.0
+offset_bottom = 426.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 0
 offset_left = 740.0
 offset_top = 71.0
 offset_right = 780.0
-offset_bottom = 111.0
+offset_bottom = 191.0
 
 [node name="HealthBar1" type="ProgressBar" parent="VBoxContainer"]
 layout_mode = 2
