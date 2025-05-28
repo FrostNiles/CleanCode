@@ -34,3 +34,5 @@ Kdo se vydá to prozkoumat?""",
 			5: {}
 		}
 	}
+func _on_continue_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/level5.tscn")

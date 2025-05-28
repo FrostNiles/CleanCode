@@ -51,3 +51,17 @@ func _check_game_over():
 			break
 	if all_dead:
 		emit_signal("game_over", "Všichni členové výpravy jsou mrtví.")
+func set_health(member_index: int, value: int):
+	if member_index >= 0 and member_index < health_values.size():
+		health_values[member_index] = clamp(value, 0, 100)
+		emit_signal("health_changed")
+		_check_game_over()
+
+func reset():
+	for i in range(4): 
+		set_health(i, 100)  
+	medkits = 3  
+	morale = 100  
+	emit_signal("health_changed")  
+	emit_signal("medkits_changed")
+	emit_signal("morale_changed")

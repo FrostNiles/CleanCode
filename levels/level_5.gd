@@ -1,5 +1,6 @@
 extends "res://scripts/general_level.gd"
 
+
 func get_level_data() -> Dictionary:
 	return {
 		"journal_text": """\
