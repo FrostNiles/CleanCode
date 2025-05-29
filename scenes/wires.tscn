@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://dqrxsf1v35omh"]
+[gd_scene load_steps=6 format=3 uid="uid://dqrxsf1v35omh"]
 
 [ext_resource type="Script" uid="uid://cro04b4b1ylje" path="res://levels/wires.gd" id="1_gtcct"]
 [ext_resource type="Texture2D" uid="uid://b54dlnl3auicf" path="res://images/magicstudio-art (3).jpg" id="2_81oka"]
-[ext_resource type="Script" uid="uid://dw8nsaqfkff4e" path="res://levels/drawing_layer.gd" id="2_h0i5q"]
+[ext_resource type="Script" uid="uid://dw8nsaqfkff4e" path="res://scripts/drawing_layer.gd" id="2_h0i5q"]
+[ext_resource type="Theme" uid="uid://8mftcvl1pupw" path="res://images/buttons.tres" id="4_4cvcg"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4cvcg"]
 texture = ExtResource("2_81oka")
@@ -75,7 +76,8 @@ script = ExtResource("2_h0i5q")
 
 [node name="ContinueButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 464.0
+offset_left = 478.0
 offset_top = 560.0
-offset_right = 677.0
-offset_bottom = 617.0
+offset_right = 667.0
+offset_bottom = 651.0
+theme = ExtResource("4_4cvcg")

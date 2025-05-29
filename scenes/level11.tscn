@@ -1,22 +1,22 @@
-[gd_scene load_steps=6 format=3 uid="uid://56o1tv8tn0fx"]
+[gd_scene load_steps=6 format=3 uid="uid://cdw1vt3hps5r8"]
 
-[ext_resource type="Texture2D" uid="uid://nkv2hh50h1yw" path="res://images/Designer (1).jpeg" id="1_g2h75"]
-[ext_resource type="Script" uid="uid://25ul3ni077x1" path="res://levels/level_1.gd" id="1_m7ahb"]
-[ext_resource type="PackedScene" uid="uid://bjrmc0tl3hml" path="res://scenes/Journal.tscn" id="2_wwpf4"]
-[ext_resource type="Theme" uid="uid://8mftcvl1pupw" path="res://images/buttons.tres" id="4_dwgg1"]
+[ext_resource type="Script" uid="uid://cbbif06e7h7rb" path="res://levels/level_11.gd" id="1_kem6p"]
+[ext_resource type="Texture2D" uid="uid://nkv2hh50h1yw" path="res://images/Designer (1).jpeg" id="2_guw3u"]
+[ext_resource type="PackedScene" uid="uid://bjrmc0tl3hml" path="res://scenes/Journal.tscn" id="3_hwav7"]
+[ext_resource type="Theme" uid="uid://8mftcvl1pupw" path="res://images/buttons.tres" id="4_guw3u"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wwpf4"]
-texture = ExtResource("1_g2h75")
+texture = ExtResource("2_guw3u")
 modulate_color = Color(0.906493, 0.906493, 0.906493, 1)
 
-[node name="Level1" type="Control"]
+[node name="Level11" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_m7ahb")
+script = ExtResource("1_kem6p")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -27,7 +27,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_wwpf4")
 
-[node name="Journal" parent="." instance=ExtResource("2_wwpf4")]
+[node name="Journal" parent="." instance=ExtResource("3_hwav7")]
 layout_mode = 1
 offset_left = 5.0
 offset_top = 0.0
@@ -41,4 +41,4 @@ offset_left = 1020.0
 offset_top = 555.0
 offset_right = 1100.0
 offset_bottom = 605.0
-theme = ExtResource("4_dwgg1")
+theme = ExtResource("4_guw3u")

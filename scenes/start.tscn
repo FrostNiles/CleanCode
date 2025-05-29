@@ -1,0 +1,61 @@
+[gd_scene load_steps=8 format=3 uid="uid://dv746blh15o3l"]
+
+[ext_resource type="Script" uid="uid://rhemy4wraikg" path="res://scenes/start.gd" id="1_bodal"]
+[ext_resource type="Texture2D" uid="uid://bpbfdrr1c2awx" path="res://images/magicstudio-art (9).jpg" id="2_kdmts"]
+[ext_resource type="Texture2D" uid="uid://rvq5qou31agu" path="res://images/FelisChaus_ParchmentBackground.jpg" id="3_0auqf"]
+[ext_resource type="FontFile" uid="uid://cytcc1l0kfhxc" path="res://images/PatrickHand-Regular.ttf" id="4_kdmts"]
+[ext_resource type="Theme" uid="uid://8mftcvl1pupw" path="res://images/buttons.tres" id="5_0auqf"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y16t7"]
+texture = ExtResource("2_kdmts")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4ge6i"]
+texture = ExtResource("3_0auqf")
+
+[node name="Start" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bodal")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1197.0
+offset_bottom = 719.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_y16t7")
+
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 369.0
+offset_top = 38.0
+offset_right = 808.0
+offset_bottom = 573.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_4ge6i")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 415.0
+offset_top = 75.0
+offset_right = 784.0
+offset_bottom = 501.0
+theme_override_fonts/normal_font = ExtResource("4_kdmts")
+text = "Rok 2024. Mezinárodní vědecký tým přistál na malém ostrově v Indonéském souostroví,  
+aby studoval seizmickou aktivitu v oblasti aktivního tektonického zlomu.
+Geolog David, biolog John, technik Mark a lékař George však narazili na nečekané nebezpečí.
+Silné zemětřesení a následná tsunami zničily základní tábor i loď.  
+Spojení se světem je přerušeno.
+Bez pomoci, s minimem zásob, čelí čtyři vědci boji o přežití.
+Každé rozhodnutí může být klíčové – pro zdraví, morálku i šanci vrátit se domů.\""
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1020.0
+offset_top = 555.0
+offset_right = 1100.0
+offset_bottom = 605.0
+theme = ExtResource("5_0auqf")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

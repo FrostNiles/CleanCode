@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dy8lopu7cegm3"
-path="res://.godot/imported/Designer (5).jpeg-e3da576650a8decbd26c11f3ffae9b51.ctex"
+uid="uid://ds8wo6u0or5xu"
+path="res://.godot/imported/magicstudio-art (8).jpg-fc7f6fcc2e2aaf79ba493b5c3c44215e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://events/Designer (5).jpeg"
-dest_files=["res://.godot/imported/Designer (5).jpeg-e3da576650a8decbd26c11f3ffae9b51.ctex"]
+source_file="res://images/magicstudio-art (8).jpg"
+dest_files=["res://.godot/imported/magicstudio-art (8).jpg-fc7f6fcc2e2aaf79ba493b5c3c44215e.ctex"]
 
 [params]
 

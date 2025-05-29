@@ -1,5 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://dfafq2q4ct62f"]
+[gd_scene load_steps=5 format=3 uid="uid://dfafq2q4ct62f"]
 
+[ext_resource type="Script" uid="uid://8y0lxin6vrnb" path="res://scenes/game_over_1.gd" id="1_symeb"]
 [ext_resource type="Texture2D" uid="uid://luxnv68fp6s1" path="res://images/Návrh bez názvu.jpg" id="1_xkyao"]
 [ext_resource type="FontFile" uid="uid://cugclamqnkmxf" path="res://images/28 Days Later.ttf" id="2_jexrh"]
 
@@ -14,6 +15,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_symeb")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
@@ -36,3 +38,20 @@ theme_override_font_sizes/font_size = 138
 text = "game over"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Restart" type="Button" parent="."]
+layout_mode = 0
+offset_left = 423.0
+offset_top = 348.0
+offset_right = 723.0
+offset_bottom = 428.0
+
+[node name="End" type="Button" parent="."]
+layout_mode = 0
+offset_left = 423.0
+offset_top = 477.0
+offset_right = 723.0
+offset_bottom = 557.0
+
+[connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="End" to="." method="_on_end_pressed"]

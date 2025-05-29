@@ -15,7 +15,7 @@ Kdo to půjde zjistit?""",
 
 		"choices": [
 			"Vyslat George",
-			"Vyslat John",
+			"Vyslat Johna",
 			"Vyslat David",
 			"Vyslat Mark",
 			"Neposílat nikoho"
@@ -30,13 +30,13 @@ Kdo to půjde zjistit?""",
 		],
 
 		"outcomes": {
-			1: {"injury_chance": 45, "medkit_chance": 30, "injury_amount": 50, "member_index": 0, "member_name": "George"},
-			2: {"injury_chance": 45, "medkit_chance": 30, "injury_amount": 50, "member_index": 1, "member_name": "John"},
-			3: {"injury_chance": 45, "medkit_chance": 30, "injury_amount": 50, "member_index": 2, "member_name": "David"},
-			4: {"injury_chance": 45, "medkit_chance": 30, "injury_amount": 50, "member_index": 3, "member_name": "Mark"},
+			1: {"injury_chance": 50, "medkit_chance": 30, "injury_amount": 50, "member_index": 0, "member_name": "George"},
+			2: {"injury_chance": 50, "medkit_chance": 30, "injury_amount": 50, "member_index": 1, "member_name": "John"},
+			3: {"injury_chance": 50, "medkit_chance": 30, "injury_amount": 50, "member_index": 2, "member_name": "David"},
+			4: {"injury_chance": 50, "medkit_chance": 30, "injury_amount": 50, "member_index": 3, "member_name": "Mark"},
 			5: {}
 		}
 	}
 
 func _on_continue_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/level4.tscn")
+	get_tree().change_scene_to_file("res://scenes/boars.tscn")

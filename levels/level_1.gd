@@ -15,7 +15,7 @@ Kdo půjde?""",
 		
 		"choices": [
 			"Vyslat George",
-			"Vyslat John",
+			"Vyslat Johna",
 			"Vyslat David",
 			"Vyslat Mark",
 			"Neposílat nikoho"

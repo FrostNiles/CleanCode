@@ -1,33 +1,35 @@
-[gd_scene load_steps=6 format=3 uid="uid://56o1tv8tn0fx"]
+[gd_scene load_steps=6 format=3 uid="uid://da2p4he02dnrg"]
 
-[ext_resource type="Texture2D" uid="uid://nkv2hh50h1yw" path="res://images/Designer (1).jpeg" id="1_g2h75"]
-[ext_resource type="Script" uid="uid://25ul3ni077x1" path="res://levels/level_1.gd" id="1_m7ahb"]
-[ext_resource type="PackedScene" uid="uid://bjrmc0tl3hml" path="res://scenes/Journal.tscn" id="2_wwpf4"]
-[ext_resource type="Theme" uid="uid://8mftcvl1pupw" path="res://images/buttons.tres" id="4_dwgg1"]
+[ext_resource type="Script" uid="uid://tsdkweeqtnbv" path="res://levels/level_8.gd" id="1_fyvwv"]
+[ext_resource type="Texture2D" uid="uid://dpvlmnuy2sffv" path="res://images/magicstudio-art (7).jpg" id="2_bgenp"]
+[ext_resource type="PackedScene" uid="uid://bjrmc0tl3hml" path="res://scenes/Journal.tscn" id="3_3bgve"]
+[ext_resource type="Theme" uid="uid://8mftcvl1pupw" path="res://images/buttons.tres" id="4_bgenp"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wwpf4"]
-texture = ExtResource("1_g2h75")
+texture = ExtResource("2_bgenp")
 modulate_color = Color(0.906493, 0.906493, 0.906493, 1)
 
-[node name="Level1" type="Control"]
+[node name="Level8" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_m7ahb")
+script = ExtResource("1_fyvwv")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 72.0
+offset_bottom = 54.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_wwpf4")
 
-[node name="Journal" parent="." instance=ExtResource("2_wwpf4")]
+[node name="Journal" parent="." instance=ExtResource("3_3bgve")]
 layout_mode = 1
 offset_left = 5.0
 offset_top = 0.0
@@ -41,4 +43,4 @@ offset_left = 1020.0
 offset_top = 555.0
 offset_right = 1100.0
 offset_bottom = 605.0
-theme = ExtResource("4_dwgg1")
+theme = ExtResource("4_bgenp")

@@ -14,17 +14,17 @@ Kdo půjde na výpravu?""",
 		"choices": [
 			"Vyslat George",
 			"Vyslat Johna",
-			"Vyslat Davida",
-			"Vyslat Marka",
-			"Nikdo"
+			"Vyslat David",
+			"Vyslat Mark",
+			"Neposílat nikoho"
 		],
-
+		
 		"results": [
-			"George šel na výpravu.",
-			"John šel na výpravu.",
-			"David šel na výpravu.",
-			"Mark šel na výpravu.",
-			"Nikdo nešel."
+			"George vyrazil.",
+			"John vyrazil.",
+			"David vyrazil.",
+			"Mark vyrazil.",
+			"Nikdo nevyrazil."
 		],
 
 		"outcomes": {
@@ -36,4 +36,4 @@ Kdo půjde na výpravu?""",
 		}
 	}
 func _on_continue_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/natives.tscn")
+	get_tree().change_scene_to_file("res://scenes/medkits.tscn")

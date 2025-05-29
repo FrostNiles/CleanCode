@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://x4ddg6nqvcb0"]
+[gd_scene load_steps=6 format=3 uid="uid://x4ddg6nqvcb0"]
 
 [ext_resource type="Script" uid="uid://c8tcq1koxm07e" path="res://levels/natives.gd" id="1_puruo"]
 [ext_resource type="Texture2D" uid="uid://wpkvlbvcxjky" path="res://images/Designer (5).jpeg" id="2_4u4qo"]
 [ext_resource type="PackedScene" uid="uid://bjrmc0tl3hml" path="res://scenes/Journal.tscn" id="2_ta88g"]
+[ext_resource type="Theme" uid="uid://8mftcvl1pupw" path="res://images/buttons.tres" id="4_4u4qo"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_keaay"]
 texture = ExtResource("2_4u4qo")
@@ -35,3 +36,4 @@ offset_left = 969.0
 offset_top = 506.0
 offset_right = 1049.0
 offset_bottom = 556.0
+theme = ExtResource("4_4u4qo")

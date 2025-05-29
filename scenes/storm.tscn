@@ -1,16 +1,16 @@
-[gd_scene load_steps=8 format=3 uid="uid://bcvjo7g5i3gm"]
+[gd_scene load_steps=8 format=3 uid="uid://dc2bihyh8ehrc"]
 
-[ext_resource type="Script" uid="uid://ch8tc3sbyyplm" path="res://events/boars.gd" id="1_vkt0h"]
-[ext_resource type="Texture2D" uid="uid://baqh32ok5k01c" path="res://images/Designer (7).jpeg" id="2_vkt0h"]
-[ext_resource type="Texture2D" uid="uid://rvq5qou31agu" path="res://images/FelisChaus_ParchmentBackground.jpg" id="3_1elbv"]
-[ext_resource type="FontFile" uid="uid://cytcc1l0kfhxc" path="res://images/PatrickHand-Regular.ttf" id="4_ye00c"]
-[ext_resource type="Theme" uid="uid://8mftcvl1pupw" path="res://images/buttons.tres" id="5_byrwy"]
+[ext_resource type="Script" uid="uid://cb3dmda0ib47y" path="res://events/storm.gd" id="1_e674d"]
+[ext_resource type="Texture2D" uid="uid://ds8wo6u0or5xu" path="res://images/magicstudio-art (8).jpg" id="2_qgu8t"]
+[ext_resource type="Texture2D" uid="uid://rvq5qou31agu" path="res://images/FelisChaus_ParchmentBackground.jpg" id="3_qbh0h"]
+[ext_resource type="FontFile" uid="uid://cytcc1l0kfhxc" path="res://images/PatrickHand-Regular.ttf" id="4_fgntl"]
+[ext_resource type="Theme" uid="uid://8mftcvl1pupw" path="res://images/buttons.tres" id="5_qgu8t"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1elbv"]
-texture = ExtResource("2_vkt0h")
+texture = ExtResource("2_qgu8t")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ye00c"]
-texture = ExtResource("3_1elbv")
+texture = ExtResource("3_qbh0h")
 
 [node name="Boars" type="Control"]
 layout_mode = 3
@@ -19,12 +19,12 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_vkt0h")
+script = ExtResource("1_e674d")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
-offset_right = 1145.0
-offset_bottom = 649.0
+offset_right = 1237.0
+offset_bottom = 720.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_1elbv")
 
 [node name="Panel2" type="Panel" parent="."]
@@ -41,7 +41,7 @@ offset_left = 436.0
 offset_top = 84.0
 offset_right = 779.0
 offset_bottom = 372.0
-theme_override_fonts/normal_font = ExtResource("4_ye00c")
+theme_override_fonts/normal_font = ExtResource("4_fgntl")
 theme_override_font_sizes/normal_font_size = 20
 
 [node name="ContinueButton" type="Button" parent="."]
@@ -50,4 +50,4 @@ offset_left = 1020.0
 offset_top = 555.0
 offset_right = 1100.0
 offset_bottom = 605.0
-theme = ExtResource("5_byrwy")
+theme = ExtResource("5_qgu8t")

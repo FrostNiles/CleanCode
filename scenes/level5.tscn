@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://t1pmey5g78np"]
+[gd_scene load_steps=6 format=3 uid="uid://t1pmey5g78np"]
 
 [ext_resource type="Script" uid="uid://c04x1pknxmslp" path="res://levels/level_5.gd" id="1_jfeem"]
 [ext_resource type="Texture2D" uid="uid://bk3cnmpph6qw" path="res://images/magicstudio-art (2).jpg" id="2_jil2c"]
 [ext_resource type="PackedScene" uid="uid://bjrmc0tl3hml" path="res://scenes/Journal.tscn" id="3_8s0yo"]
+[ext_resource type="Theme" uid="uid://8mftcvl1pupw" path="res://images/buttons.tres" id="4_jil2c"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fkit3"]
 texture = ExtResource("2_jil2c")
@@ -36,3 +37,4 @@ offset_left = 1020.0
 offset_top = 555.0
 offset_right = 1100.0
 offset_bottom = 605.0
+theme = ExtResource("4_jil2c")

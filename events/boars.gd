@@ -22,7 +22,7 @@ func get_next_scene_path() -> String:
 	if all_dead:
 		return "res://scenes/game_over_1.tscn"
 	else:
-		return "res://scenes/level3.tscn"
+		return "res://scenes/level4.tscn"
 
 func _on_game_over(reason: String) -> void:
 	pass

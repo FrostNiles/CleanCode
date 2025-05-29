@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://338vrj3e3a80"]
+
+[ext_resource type="Script" uid="uid://c4gn745gj73un" path="res://levels/level_6.gd" id="1_ng42w"]
+[ext_resource type="Texture2D" uid="uid://dtpcqflf3cssh" path="res://images/Designer.jpeg" id="2_eil0g"]
+[ext_resource type="PackedScene" uid="uid://bjrmc0tl3hml" path="res://scenes/Journal.tscn" id="3_qkggj"]
+[ext_resource type="Theme" uid="uid://8mftcvl1pupw" path="res://images/buttons.tres" id="4_eil0g"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_utlmm"]
+texture = ExtResource("2_eil0g")
+modulate_color = Color(0.794828, 0.794828, 0.794828, 1)
+
+[node name="Level6" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ng42w")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 650.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_utlmm")
+
+[node name="Journal" parent="." instance=ExtResource("3_qkggj")]
+layout_mode = 1
+offset_left = 4.0
+offset_right = 4.0
+
+[node name="ContinueButton" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 1020.0
+offset_top = 555.0
+offset_right = 1100.0
+offset_bottom = 605.0
+theme = ExtResource("4_eil0g")

@@ -33,7 +33,7 @@ func apply_choice_effect(choice_id: int) -> void:
 		else:
 			result_text = "%s se vrátil bez zranění." % member_name
 	else:
-		Healthbars.change_morale(-20)
+		Healthbars.change_morale(-30)
 		result_text = "Nikdo nevyrazil."
 
 	journal.set_journal_text(result_text)

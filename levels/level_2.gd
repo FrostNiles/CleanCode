@@ -15,7 +15,7 @@ Je třeba se rozhodnout. Risk nebo opatrnost?""",
 		
 		"choices": [
 			"Vyslat George",
-			"Vyslat John",
+			"Vyslat Johna",
 			"Vyslat David",
 			"Vyslat Mark",
 			"Neposílat nikoho"
@@ -39,4 +39,4 @@ Je třeba se rozhodnout. Risk nebo opatrnost?""",
 	}
 
 func _on_continue_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/boars.tscn")
+	get_tree().change_scene_to_file("res://scenes/level3.tscn")
