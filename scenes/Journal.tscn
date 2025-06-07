@@ -10,6 +10,9 @@
 texture = ExtResource("2_xdiiq")
 
 [sub_resource type="FontFile" id="FontFile_ev7tu"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/16/0/ascent = 0.0
 cache/0/16/0/descent = 0.0
 cache/0/16/0/underline_position = 0.0
@@ -17,6 +20,9 @@ cache/0/16/0/underline_thickness = 0.0
 cache/0/16/0/scale = 1.0
 
 [sub_resource type="FontFile" id="FontFile_b3prm"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/16/0/ascent = 0.0
 cache/0/16/0/descent = 0.0
 cache/0/16/0/underline_position = 0.0
@@ -24,6 +30,9 @@ cache/0/16/0/underline_thickness = 0.0
 cache/0/16/0/scale = 1.0
 
 [sub_resource type="FontFile" id="FontFile_wh5mg"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/16/0/ascent = 0.0
 cache/0/16/0/descent = 0.0
 cache/0/16/0/underline_position = 0.0
@@ -31,6 +40,9 @@ cache/0/16/0/underline_thickness = 0.0
 cache/0/16/0/scale = 1.0
 
 [sub_resource type="FontFile" id="FontFile_crjel"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/16/0/ascent = 0.0
 cache/0/16/0/descent = 0.0
 cache/0/16/0/underline_position = 0.0
@@ -38,6 +50,9 @@ cache/0/16/0/underline_thickness = 0.0
 cache/0/16/0/scale = 1.0
 
 [sub_resource type="FontFile" id="FontFile_fjbcm"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/16/0/ascent = 0.0
 cache/0/16/0/descent = 0.0
 cache/0/16/0/underline_position = 0.0
@@ -45,6 +60,9 @@ cache/0/16/0/underline_thickness = 0.0
 cache/0/16/0/scale = 1.0
 
 [sub_resource type="FontFile" id="FontFile_ig2of"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/16/0/ascent = 0.0
 cache/0/16/0/descent = 0.0
 cache/0/16/0/underline_position = 0.0
@@ -292,6 +310,9 @@ corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
 [sub_resource type="FontFile" id="FontFile_tkgvl"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/16/0/ascent = 0.0
 cache/0/16/0/descent = 0.0
 cache/0/16/0/underline_position = 0.0
@@ -299,6 +320,9 @@ cache/0/16/0/underline_thickness = 0.0
 cache/0/16/0/scale = 1.0
 
 [sub_resource type="FontFile" id="FontFile_qjfoq"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/16/0/ascent = 0.0
 cache/0/16/0/descent = 0.0
 cache/0/16/0/underline_position = 0.0
@@ -415,6 +439,9 @@ corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
 [sub_resource type="FontFile" id="FontFile_ox0cq"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/16/0/ascent = 0.0
 cache/0/16/0/descent = 0.0
 cache/0/16/0/underline_position = 0.0
@@ -451,6 +478,9 @@ corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
 [sub_resource type="FontFile" id="FontFile_86nmt"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/16/0/ascent = 0.0
 cache/0/16/0/descent = 0.0
 cache/0/16/0/underline_position = 0.0
@@ -490,6 +520,9 @@ corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
 [sub_resource type="FontFile" id="FontFile_j88hj"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/16/0/ascent = 0.0
 cache/0/16/0/descent = 0.0
 cache/0/16/0/underline_position = 0.0
@@ -641,9 +674,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -29.5
+offset_left = -177.5
 offset_top = -71.0
-offset_right = 30.5
+offset_right = -117.5
 offset_bottom = -31.0
 grow_horizontal = 2
 grow_vertical = 0
@@ -679,9 +712,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -177.5
+offset_left = 111.5
 offset_top = -71.0
-offset_right = -117.5
+offset_right = 171.5
 offset_bottom = -31.0
 grow_horizontal = 2
 grow_vertical = 0
@@ -698,9 +731,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = 115.5
+offset_left = -33.5
 offset_top = -71.0
-offset_right = 175.5
+offset_right = 26.5
 offset_bottom = -31.0
 grow_horizontal = 2
 grow_vertical = 0
@@ -711,17 +744,19 @@ autowrap_mode = 2
 
 [node name="MedkitLabel" type="Label" parent="Panel"]
 layout_mode = 0
-offset_left = 296.0
-offset_top = 326.0
-offset_right = 347.0
-offset_bottom = 359.0
+offset_left = 354.0
+offset_top = 286.0
+offset_right = 385.0
+offset_bottom = 310.0
+theme_override_fonts/font = ExtResource("3_2tdh1")
+theme_override_font_sizes/font_size = 14
 
 [node name="Button3" type="Button" parent="Panel"]
 custom_minimum_size = Vector2(60, 40)
 layout_mode = 0
-offset_left = 190.0
+offset_left = 186.0
 offset_top = 386.0
-offset_right = 250.0
+offset_right = 246.0
 offset_bottom = 426.0
 theme = ExtResource("4_ev7tu")
 theme_override_fonts/font = SubResource("FontFile_fjbcm")
@@ -742,9 +777,9 @@ theme_override_styles/fill = SubResource("StyleBoxFlat_b3prm")
 [node name="Button6" type="Button" parent="Panel"]
 custom_minimum_size = Vector2(60, 40)
 layout_mode = 0
-offset_left = 335.0
+offset_left = 331.0
 offset_top = 386.0
-offset_right = 395.0
+offset_right = 391.0
 offset_bottom = 426.0
 theme = ExtResource("4_ev7tu")
 theme_override_fonts/font = SubResource("FontFile_tkgvl")

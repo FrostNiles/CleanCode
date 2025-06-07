@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://dv746blh15o3l"]
 
-[ext_resource type="Script" uid="uid://rhemy4wraikg" path="res://scenes/start.gd" id="1_bodal"]
+[ext_resource type="Script" uid="uid://rhemy4wraikg" path="res://events/start.gd" id="1_bodal"]
 [ext_resource type="Texture2D" uid="uid://bpbfdrr1c2awx" path="res://images/magicstudio-art (9).jpg" id="2_kdmts"]
 [ext_resource type="Texture2D" uid="uid://rvq5qou31agu" path="res://images/FelisChaus_ParchmentBackground.jpg" id="3_0auqf"]
 [ext_resource type="FontFile" uid="uid://cytcc1l0kfhxc" path="res://images/PatrickHand-Regular.ttf" id="4_kdmts"]

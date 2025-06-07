@@ -37,4 +37,4 @@ Kdo se toho ujme?""",
 	}
 	
 func _on_continue_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/level10.tscn")
+	get_tree().change_scene_to_file("res://scenes/natives.tscn")

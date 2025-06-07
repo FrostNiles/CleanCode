@@ -30,9 +30,9 @@ Pokud funguje, mohli bychom zavolat o pomoc. Ale cesta tam je dlouhÃ¡ a nebezpeÄ
 			2: {"injury_chance": 35, "medkit_chance": 35, "injury_amount": 50, "member_index": 1, "member_name": "John"},
 			3: {"injury_chance": 35, "medkit_chance": 35, "injury_amount": 50, "member_index": 2, "member_name": "David"},
 			4: {"injury_chance": 35, "medkit_chance": 35, "injury_amount": 50, "member_index": 3, "member_name": "Mark"},
-			5: {"morale_change": -10}
+			5: {}
 		}
 	}
 
 func _on_continue_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/wires.tscn") 
+	get_tree().change_scene_to_file("res://scenes/final_level.tscn") 

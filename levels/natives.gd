@@ -56,4 +56,4 @@ func apply_choice_effect(choice_id: int) -> void:
 			continue_button.visible = false
 
 func _on_continue_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/level5.tscn")
+	get_tree().change_scene_to_file("res://scenes/level10.tscn")

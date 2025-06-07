@@ -20,7 +20,10 @@ func apply_choice_effect(choice_id: int) -> void:
 	if outcomes.has(choice_id) and !outcomes[choice_id].is_empty():
 		var outcome = outcomes[choice_id]
 		var member_name = outcome.get("member_name", "Člen")
-
+		var injury_chance = outcome.get("injury_chance", 0)
+		var medkit_chance = outcome.get("medkit_chance", 0)
+		var injury_amount = outcome.get("injury_amount", 0)
+		var member_index = outcome.get("member_index", 0)
 		Healthbars.change_morale(10)
 
 		if rand < outcome["injury_chance"]:

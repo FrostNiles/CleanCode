@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://c63mmkovvvncp"]
 
 [ext_resource type="Texture2D" uid="uid://b3jt7nbso6n43" path="res://images/magicstudio-art (5).jpg" id="1_3d26k"]
-[ext_resource type="Script" uid="uid://b27ri7twqc1y" path="res://scenes/end.gd" id="1_p7m4f"]
+[ext_resource type="Script" uid="uid://b27ri7twqc1y" path="res://events/end.gd" id="1_p7m4f"]
 [ext_resource type="FontFile" uid="uid://cugclamqnkmxf" path="res://images/28 Days Later.ttf" id="2_p7m4f"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bvfni"]
