@@ -51,15 +51,12 @@ func get_level_data() -> Dictionary:
 	}
 
 func apply_choice_effect(choice_id: int) -> void:
-	# choice_id začíná na 1, index správného člena je od 0,
-	# takže přepočítáme volbu odečtením 1
 	var selected_index = choice_id - 1
 
 	if selected_index == correct_member_index:
 		journal.set_journal_text("Akce byla úspěšná! Zachránili jste celou výpravu.")
 		continue_button.visible = true
-		# Změna scény na end.tscn
-		await get_tree().create_timer(1.5).timeout # malý delay pro zobrazení textu
+		await get_tree().create_timer(2.0).timeout 
 		get_tree().change_scene_to_file("res://scenes/end.tscn")
 	else:
 		journal.set_journal_text("Mise selhala. Člen nebyl vhodný pro tuto akci...")
@@ -67,4 +64,4 @@ func apply_choice_effect(choice_id: int) -> void:
 		get_tree().change_scene_to_file("res://scenes/game_over_1.tscn")
 
 func _on_continue_pressed() -> void:
-	pass  # Už není potřeba, změna scény probíhá hned v apply_choice_effect
+	pass 
