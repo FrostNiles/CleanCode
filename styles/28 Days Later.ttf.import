@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://c37stl60ytj2b"
-path="res://.godot/imported/Random Wednesday.ttf-c0a9fd7e7b855a81e5922616fec4d0f8.fontdata"
+uid="uid://cugclamqnkmxf"
+path="res://.godot/imported/28 Days Later.ttf-4ec6f34c8dce2116f4ef37c79b32f8b3.fontdata"
 
 [deps]
 
-source_file="res://images/Random Wednesday.ttf"
-dest_files=["res://.godot/imported/Random Wednesday.ttf-c0a9fd7e7b855a81e5922616fec4d0f8.fontdata"]
+source_file="res://styles/28 Days Later.ttf"
+dest_files=["res://.godot/imported/28 Days Later.ttf-4ec6f34c8dce2116f4ef37c79b32f8b3.fontdata"]
 
 [params]
 

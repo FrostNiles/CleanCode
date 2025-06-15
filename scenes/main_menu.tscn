@@ -1,8 +1,8 @@
 [gd_scene load_steps=9 format=3 uid="uid://dkrly0fhyywqt"]
 
-[ext_resource type="Script" uid="uid://cpqlr64esd0p1" path="res://main_menu.gd" id="1_bqqt6"]
+[ext_resource type="Script" uid="uid://cpqlr64esd0p1" path="res://scripts/main_menu.gd" id="1_bqqt6"]
 [ext_resource type="Texture2D" uid="uid://bygx1b0hxo2bk" path="res://images/Designer (3).jpeg" id="2_wu84c"]
-[ext_resource type="FontFile" uid="uid://cugclamqnkmxf" path="res://images/28 Days Later.ttf" id="3_8ln24"]
+[ext_resource type="FontFile" uid="uid://cugclamqnkmxf" path="res://styles/28 Days Later.ttf" id="3_8ln24"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_eiy7p"]
 texture = ExtResource("2_wu84c")

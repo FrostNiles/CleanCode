@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://8y0lxin6vrnb" path="res://events/game_over_1.gd" id="1_symeb"]
 [ext_resource type="Texture2D" uid="uid://luxnv68fp6s1" path="res://images/Návrh bez názvu.jpg" id="1_xkyao"]
-[ext_resource type="FontFile" uid="uid://cugclamqnkmxf" path="res://images/28 Days Later.ttf" id="2_jexrh"]
+[ext_resource type="FontFile" uid="uid://cugclamqnkmxf" path="res://styles/28 Days Later.ttf" id="2_jexrh"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jexrh"]
 texture = ExtResource("1_xkyao")

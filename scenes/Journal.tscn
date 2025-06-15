@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" uid="uid://jcepf7fa4e3s" path="res://scripts/journal.gd" id="1_imr2r"]
 [ext_resource type="Texture2D" uid="uid://rvq5qou31agu" path="res://images/FelisChaus_ParchmentBackground.jpg" id="2_xdiiq"]
-[ext_resource type="FontFile" uid="uid://cytcc1l0kfhxc" path="res://images/PatrickHand-Regular.ttf" id="3_2tdh1"]
+[ext_resource type="FontFile" uid="uid://cytcc1l0kfhxc" path="res://styles/PatrickHand-Regular.ttf" id="3_2tdh1"]
 [ext_resource type="Script" uid="uid://bfdemp4ycbqj7" path="res://scripts/interactive_heatlbar.gd" id="3_xdiiq"]
-[ext_resource type="Theme" uid="uid://csxpgjht3rm8b" path="res://images/choices.tres" id="4_ev7tu"]
+[ext_resource type="Theme" uid="uid://csxpgjht3rm8b" path="res://styles/choices.tres" id="4_ev7tu"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2tdh1"]
 texture = ExtResource("2_xdiiq")

@@ -3,8 +3,8 @@
 [ext_resource type="Script" uid="uid://rhemy4wraikg" path="res://events/start.gd" id="1_bodal"]
 [ext_resource type="Texture2D" uid="uid://bpbfdrr1c2awx" path="res://images/magicstudio-art (9).jpg" id="2_kdmts"]
 [ext_resource type="Texture2D" uid="uid://rvq5qou31agu" path="res://images/FelisChaus_ParchmentBackground.jpg" id="3_0auqf"]
-[ext_resource type="FontFile" uid="uid://cytcc1l0kfhxc" path="res://images/PatrickHand-Regular.ttf" id="4_kdmts"]
-[ext_resource type="Theme" uid="uid://8mftcvl1pupw" path="res://images/buttons.tres" id="5_0auqf"]
+[ext_resource type="FontFile" uid="uid://cytcc1l0kfhxc" path="res://styles/PatrickHand-Regular.ttf" id="4_kdmts"]
+[ext_resource type="Theme" uid="uid://8mftcvl1pupw" path="res://styles/buttons.tres" id="5_0auqf"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y16t7"]
 texture = ExtResource("2_kdmts")

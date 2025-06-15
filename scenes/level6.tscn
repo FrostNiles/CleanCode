@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://c4gn745gj73un" path="res://levels/level_6.gd" id="1_ng42w"]
 [ext_resource type="Texture2D" uid="uid://dtpcqflf3cssh" path="res://images/Designer.jpeg" id="2_eil0g"]
 [ext_resource type="PackedScene" uid="uid://bjrmc0tl3hml" path="res://scenes/Journal.tscn" id="3_qkggj"]
-[ext_resource type="Theme" uid="uid://8mftcvl1pupw" path="res://images/buttons.tres" id="4_eil0g"]
+[ext_resource type="Theme" uid="uid://8mftcvl1pupw" path="res://styles/buttons.tres" id="4_eil0g"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_utlmm"]
 texture = ExtResource("2_eil0g")

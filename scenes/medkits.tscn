@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://cextvs88lw0dy"]
+[gd_scene load_steps=8 format=3 uid="uid://cextvs88lw0dy"]
 
 [ext_resource type="Script" uid="uid://dhhnwutmjlyuq" path="res://events/medkits.gd" id="1_o23bw"]
 [ext_resource type="Texture2D" uid="uid://b63j2igovjqr1" path="res://images/magicstudio-art.jpg" id="2_gfym4"]
 [ext_resource type="Texture2D" uid="uid://rvq5qou31agu" path="res://images/FelisChaus_ParchmentBackground.jpg" id="3_u0nm2"]
-[ext_resource type="FontFile" uid="uid://cytcc1l0kfhxc" path="res://images/PatrickHand-Regular.ttf" id="4_c6e0i"]
+[ext_resource type="FontFile" uid="uid://cytcc1l0kfhxc" path="res://styles/PatrickHand-Regular.ttf" id="4_c6e0i"]
+[ext_resource type="Theme" uid="uid://8mftcvl1pupw" path="res://styles/buttons.tres" id="5_sharo"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u0nm2"]
 texture = ExtResource("2_gfym4")
@@ -45,7 +46,8 @@ theme_override_font_sizes/normal_font_size = 20
 
 [node name="ContinueButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 1020.0
-offset_top = 555.0
-offset_right = 1100.0
-offset_bottom = 605.0
+offset_left = 1032.0
+offset_top = 542.0
+offset_right = 1112.0
+offset_bottom = 592.0
+theme = ExtResource("5_sharo")

@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://cytcc1l0kfhxc"
-path="res://.godot/imported/PatrickHand-Regular.ttf-aa1b9da96b14ae5b2d9a22f498e2cb56.fontdata"
+path="res://.godot/imported/PatrickHand-Regular.ttf-0193de44c0144c82c32d5791af4567a3.fontdata"
 
 [deps]
 
-source_file="res://images/PatrickHand-Regular.ttf"
-dest_files=["res://.godot/imported/PatrickHand-Regular.ttf-aa1b9da96b14ae5b2d9a22f498e2cb56.fontdata"]
+source_file="res://styles/PatrickHand-Regular.ttf"
+dest_files=["res://.godot/imported/PatrickHand-Regular.ttf-0193de44c0144c82c32d5791af4567a3.fontdata"]
 
 [params]
 

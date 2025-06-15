@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://6o7qvkb0oufy"
-path="res://.godot/imported/SpecialElite-Regular.ttf-844935b38cba61f9fdc2dd161d6398ed.fontdata"
+uid="uid://c37stl60ytj2b"
+path="res://.godot/imported/Random Wednesday.ttf-b1972d5f254995c732a267faa637a3aa.fontdata"
 
 [deps]
 
-source_file="res://images/SpecialElite-Regular.ttf"
-dest_files=["res://.godot/imported/SpecialElite-Regular.ttf-844935b38cba61f9fdc2dd161d6398ed.fontdata"]
+source_file="res://styles/Random Wednesday.ttf"
+dest_files=["res://.godot/imported/Random Wednesday.ttf-b1972d5f254995c732a267faa637a3aa.fontdata"]
 
 [params]
 

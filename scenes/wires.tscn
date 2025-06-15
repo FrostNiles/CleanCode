@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://dqrxsf1v35omh"]
 
-[ext_resource type="Script" uid="uid://cro04b4b1ylje" path="res://events/wires.gd" id="1_gtcct"]
+[ext_resource type="Script" path="res://events/wires.gd" id="1_gtcct"]
 [ext_resource type="Texture2D" uid="uid://b54dlnl3auicf" path="res://images/magicstudio-art (3).jpg" id="2_81oka"]
-[ext_resource type="Script" uid="uid://dw8nsaqfkff4e" path="res://scripts/drawing_layer.gd" id="2_h0i5q"]
-[ext_resource type="Theme" uid="uid://8mftcvl1pupw" path="res://images/buttons.tres" id="4_4cvcg"]
+[ext_resource type="Script" path="res://scripts/drawing_layer.gd" id="2_h0i5q"]
+[ext_resource type="Theme" uid="uid://8mftcvl1pupw" path="res://styles/buttons.tres" id="4_4cvcg"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4cvcg"]
 texture = ExtResource("2_81oka")
