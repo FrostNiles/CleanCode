@@ -3,7 +3,7 @@ extends "res://scripts/general_level.gd"
 func get_level_data() -> Dictionary:
 	return {
 		"journal_text": """\
-Den 10:
+Den 9:
 
 Z dálky jsme zahlédli světlo — možná loď, možná další výprava.
 Je to risk, ale mohli bychom vyslat někoho, aby to prozkoumal.
@@ -13,8 +13,8 @@ Kdo se odváží?""",
 		"choices": [
 			"Vyslat George",
 			"Vyslat Johna",
-			"Vyslat David",
-			"Vyslat Mark",
+			"Vyslat Davida",
+			"Vyslat Marka",
 			"Neposílat nikoho"
 		],
 		

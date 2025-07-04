@@ -12,8 +12,8 @@ Někdo tam musí jít – ale co když tam někdo nebo něco je?""",
 		"choices": [
 			"Vyslat George",
 			"Vyslat Johna",
-			"Vyslat David",
-			"Vyslat Mark",
+			"Vyslat Davida",
+			"Vyslat Marka",
 			"Neposílat nikoho"
 		],
 		

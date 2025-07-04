@@ -14,8 +14,8 @@ Kdo půjde na výpravu?""",
 		"choices": [
 			"Vyslat George",
 			"Vyslat Johna",
-			"Vyslat David",
-			"Vyslat Mark",
+			"Vyslat Davida",
+			"Vyslat Marka",
 			"Neposílat nikoho"
 		],
 		

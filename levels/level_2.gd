@@ -16,8 +16,8 @@ Je třeba se rozhodnout. Risk nebo opatrnost?""",
 		"choices": [
 			"Vyslat George",
 			"Vyslat Johna",
-			"Vyslat David",
-			"Vyslat Mark",
+			"Vyslat Davida",
+			"Vyslat Marka",
 			"Neposílat nikoho"
 		],
 		

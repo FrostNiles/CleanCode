@@ -14,8 +14,8 @@ Kdo se toho ujme?""",
 		"choices": [
 			"Vyslat George",
 			"Vyslat Johna",
-			"Vyslat David",
-			"Vyslat Mark",
+			"Vyslat Davida",
+			"Vyslat Marka",
 			"Neposílat nikoho"
 		],
 		

@@ -3,7 +3,7 @@ extends "res://scripts/general_level.gd"
 func get_level_data() -> Dictionary:
 	return {
 		"journal_text": """\
-Den 11:
+Den 10:
 
 Počasí se zhoršuje. Silný vítr a déšť ohrožují celý tábor.
 Jediná šance je upevnit přístřešek, ale je to nebezpečné.
@@ -13,8 +13,8 @@ Kdo půjde zajistit tábor?""",
 		"choices": [
 			"Vyslat George",
 			"Vyslat Johna",
-			"Vyslat David",
-			"Vyslat Mark",
+			"Vyslat Davida",
+			"Vyslat Marka",
 			"Neposílat nikoho"
 		],
 		

@@ -3,7 +3,7 @@ extends "res://scripts/general_level.gd"
 func get_level_data() -> Dictionary:
 	return {
 		"journal_text": """\
-Den 9:
+Den 11:
 
 Na nejvyšším kopci jsme zahlédli kovovou konstrukci – možná zbytky vysílače.
 
@@ -12,8 +12,8 @@ Pokud funguje, mohli bychom zavolat o pomoc. Ale cesta tam je dlouhá a nebezpe�
 		"choices": [
 			"Vyslat George",
 			"Vyslat Johna",
-			"Vyslat David",
-			"Vyslat Mark",
+			"Vyslat Davida",
+			"Vyslat Marka",
 			"Neposílat nikoho"
 		],
 		

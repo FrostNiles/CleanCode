@@ -15,9 +15,9 @@ Kdo to půjde zjistit?""",
 
 		"choices": [
 			"Vyslat George",
-			"Vyslat John",
-			"Vyslat David",
-			"Vyslat Mark",
+			"Vyslat Johna",
+			"Vyslat Davida",
+			"Vyslat Marka",
 			"Neposílat nikoho"
 		],
 
