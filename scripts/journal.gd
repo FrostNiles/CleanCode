@@ -13,10 +13,10 @@ signal decision_made(selected_choice : int)
 @onready var morale_label = $Panel/MoraleLabel
 
 @onready var health_bars = [
-	$VBoxContainer/HealthBar1,
-	$VBoxContainer/HealthBar2,
-	$VBoxContainer/HealthBar3,
-	$VBoxContainer/HealthBar4
+	$VBoxContainerHealth/HBoxContainerG/HealthBarG,
+	$VBoxContainerHealth/HBoxContainerJ/HealthBarJ,
+	$VBoxContainerHealth/HBoxContainerD/HealthBarD,
+	$VBoxContainerHealth/HBoxContainerM/HealthBarM
 ]
 
 var apply_choice_effect_func : Callable = Callable()
