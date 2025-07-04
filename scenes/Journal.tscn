@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://bjrmc0tl3hml"]
+[gd_scene load_steps=19 format=3 uid="uid://bjrmc0tl3hml"]
 
 [ext_resource type="Script" uid="uid://jcepf7fa4e3s" path="res://scripts/journal.gd" id="1_imr2r"]
 [ext_resource type="Texture2D" uid="uid://rvq5qou31agu" path="res://images/FelisChaus_ParchmentBackground.jpg" id="2_xdiiq"]
@@ -438,190 +438,6 @@ corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="FontFile" id="FontFile_ox0cq"]
-subpixel_positioning = 0
-msdf_pixel_range = 14
-msdf_size = 128
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-cache/0/14/0/ascent = 0.0
-cache/0/14/0/descent = 0.0
-cache/0/14/0/underline_position = 0.0
-cache/0/14/0/underline_thickness = 0.0
-cache/0/14/0/scale = 1.0
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wh5mg"]
-content_margin_left = 0.0
-content_margin_top = 0.0
-content_margin_right = 0.0
-content_margin_bottom = 0.0
-bg_color = Color(0.6, 0.6, 0.6, 0)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.709804, 0.396078, 0.113725, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fjbcm"]
-bg_color = Color(1, 0, 0.156863, 1)
-border_color = Color(0.709804, 0.396078, 0.113725, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-
-[sub_resource type="FontFile" id="FontFile_86nmt"]
-subpixel_positioning = 0
-msdf_pixel_range = 14
-msdf_size = 128
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-cache/0/14/0/ascent = 0.0
-cache/0/14/0/descent = 0.0
-cache/0/14/0/underline_position = 0.0
-cache/0/14/0/underline_thickness = 0.0
-cache/0/14/0/scale = 1.0
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tkgvl"]
-content_margin_left = 0.0
-content_margin_top = 0.0
-content_margin_right = 0.0
-bg_color = Color(0.6, 0.6, 0.6, 0)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.709804, 0.396078, 0.113725, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ig2of"]
-content_margin_left = 4.0
-content_margin_top = 4.0
-content_margin_right = 4.0
-content_margin_bottom = 4.0
-bg_color = Color(1, 0, 0.156863, 1)
-border_color = Color(0.709804, 0.396078, 0.113725, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-
-[sub_resource type="FontFile" id="FontFile_j88hj"]
-subpixel_positioning = 0
-msdf_pixel_range = 14
-msdf_size = 128
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-cache/0/2/0/ascent = 0.0
-cache/0/2/0/descent = 0.0
-cache/0/2/0/underline_position = 0.0
-cache/0/2/0/underline_thickness = 0.0
-cache/0/2/0/scale = 1.0
-cache/0/3/0/ascent = 0.0
-cache/0/3/0/descent = 0.0
-cache/0/3/0/underline_position = 0.0
-cache/0/3/0/underline_thickness = 0.0
-cache/0/3/0/scale = 1.0
-cache/0/4/0/ascent = 0.0
-cache/0/4/0/descent = 0.0
-cache/0/4/0/underline_position = 0.0
-cache/0/4/0/underline_thickness = 0.0
-cache/0/4/0/scale = 1.0
-cache/0/5/0/ascent = 0.0
-cache/0/5/0/descent = 0.0
-cache/0/5/0/underline_position = 0.0
-cache/0/5/0/underline_thickness = 0.0
-cache/0/5/0/scale = 1.0
-cache/0/6/0/ascent = 0.0
-cache/0/6/0/descent = 0.0
-cache/0/6/0/underline_position = 0.0
-cache/0/6/0/underline_thickness = 0.0
-cache/0/6/0/scale = 1.0
-cache/0/7/0/ascent = 0.0
-cache/0/7/0/descent = 0.0
-cache/0/7/0/underline_position = 0.0
-cache/0/7/0/underline_thickness = 0.0
-cache/0/7/0/scale = 1.0
-cache/0/8/0/ascent = 0.0
-cache/0/8/0/descent = 0.0
-cache/0/8/0/underline_position = 0.0
-cache/0/8/0/underline_thickness = 0.0
-cache/0/8/0/scale = 1.0
-cache/0/9/0/ascent = 0.0
-cache/0/9/0/descent = 0.0
-cache/0/9/0/underline_position = 0.0
-cache/0/9/0/underline_thickness = 0.0
-cache/0/9/0/scale = 1.0
-cache/0/10/0/ascent = 0.0
-cache/0/10/0/descent = 0.0
-cache/0/10/0/underline_position = 0.0
-cache/0/10/0/underline_thickness = 0.0
-cache/0/10/0/scale = 1.0
-cache/0/11/0/ascent = 0.0
-cache/0/11/0/descent = 0.0
-cache/0/11/0/underline_position = 0.0
-cache/0/11/0/underline_thickness = 0.0
-cache/0/11/0/scale = 1.0
-cache/0/12/0/ascent = 0.0
-cache/0/12/0/descent = 0.0
-cache/0/12/0/underline_position = 0.0
-cache/0/12/0/underline_thickness = 0.0
-cache/0/12/0/scale = 1.0
-cache/0/13/0/ascent = 0.0
-cache/0/13/0/descent = 0.0
-cache/0/13/0/underline_position = 0.0
-cache/0/13/0/underline_thickness = 0.0
-cache/0/13/0/scale = 1.0
-cache/0/14/0/ascent = 0.0
-cache/0/14/0/descent = 0.0
-cache/0/14/0/underline_position = 0.0
-cache/0/14/0/underline_thickness = 0.0
-cache/0/14/0/scale = 1.0
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ev7tu"]
-content_margin_left = 0.0
-content_margin_top = 0.0
-content_margin_right = 0.0
-content_margin_bottom = 0.0
-bg_color = Color(0.6, 0.6, 0.6, 0.0352941)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.709804, 0.396078, 0.113725, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ox0cq"]
-content_margin_left = 4.0
-content_margin_top = 4.0
-content_margin_right = 4.0
-content_margin_bottom = 4.0
-bg_color = Color(1, 0, 0.156863, 1)
-border_color = Color(0.709804, 0.396078, 0.113725, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-
 [node name="Journal" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -644,7 +460,7 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -205.0
 offset_top = -274.0
-offset_right = 234.0
+offset_right = 295.0
 offset_bottom = 251.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -676,7 +492,7 @@ anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -177.5
 offset_top = -71.0
-offset_right = -117.5
+offset_right = -77.5
 offset_bottom = -31.0
 grow_horizontal = 2
 grow_vertical = 0
@@ -693,9 +509,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -177.5
+offset_left = -179.0
 offset_top = -139.0
-offset_right = -117.5
+offset_right = -79.0
 offset_bottom = -99.0
 grow_horizontal = 2
 grow_vertical = 0
@@ -712,9 +528,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = 111.5
+offset_left = 106.0
 offset_top = -71.0
-offset_right = 171.5
+offset_right = 226.0
 offset_bottom = -31.0
 grow_horizontal = 2
 grow_vertical = 0
@@ -731,10 +547,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -33.5
-offset_top = -71.0
-offset_right = 26.5
-offset_bottom = -31.0
+offset_left = -62.0
+offset_top = -70.0
+offset_right = 38.0
+offset_bottom = -30.0
 grow_horizontal = 2
 grow_vertical = 0
 theme = ExtResource("4_ev7tu")
@@ -754,10 +570,10 @@ theme_override_font_sizes/font_size = 14
 [node name="Button3" type="Button" parent="Panel"]
 custom_minimum_size = Vector2(60, 40)
 layout_mode = 0
-offset_left = 186.0
-offset_top = 386.0
-offset_right = 246.0
-offset_bottom = 426.0
+offset_left = 188.0
+offset_top = 387.0
+offset_right = 288.0
+offset_bottom = 427.0
 theme = ExtResource("4_ev7tu")
 theme_override_fonts/font = SubResource("FontFile_fjbcm")
 theme_override_font_sizes/font_size = 12
@@ -765,10 +581,10 @@ autowrap_mode = 2
 
 [node name="MoraleLabel" type="ProgressBar" parent="Panel"]
 layout_mode = 0
-offset_left = 369.0
-offset_top = 138.0
-offset_right = 421.0
-offset_bottom = 170.0
+offset_left = 394.0
+offset_top = 141.0
+offset_right = 446.0
+offset_bottom = 171.0
 theme_override_fonts/font = SubResource("FontFile_ig2of")
 theme_override_font_sizes/font_size = 19
 theme_override_styles/background = SubResource("StyleBoxFlat_86nmt")
@@ -777,23 +593,30 @@ theme_override_styles/fill = SubResource("StyleBoxFlat_b3prm")
 [node name="Button6" type="Button" parent="Panel"]
 custom_minimum_size = Vector2(60, 40)
 layout_mode = 0
-offset_left = 331.0
+offset_left = 355.0
 offset_top = 386.0
-offset_right = 391.0
+offset_right = 475.0
 offset_bottom = 426.0
 theme = ExtResource("4_ev7tu")
 theme_override_fonts/font = SubResource("FontFile_tkgvl")
 theme_override_font_sizes/font_size = 12
 autowrap_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="VBoxContainerHealth" type="VBoxContainer" parent="."]
 layout_mode = 0
 offset_left = 740.0
 offset_top = 71.0
 offset_right = 780.0
 offset_bottom = 191.0
 
-[node name="HealthBar1" type="ProgressBar" parent="VBoxContainer"]
+[node name="HBoxContainerG" type="HBoxContainer" parent="VBoxContainerHealth"]
+layout_mode = 2
+
+[node name="LabelG" type="Label" parent="VBoxContainerHealth/HBoxContainerG"]
+layout_mode = 2
+text = "George"
+
+[node name="HealthBarG" type="ProgressBar" parent="VBoxContainerHealth/HBoxContainerG"]
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
 theme_override_fonts/font = SubResource("FontFile_qjfoq")
@@ -802,29 +625,53 @@ theme_override_styles/background = SubResource("StyleBoxFlat_qjfoq")
 theme_override_styles/fill = SubResource("StyleBoxFlat_crjel")
 script = ExtResource("3_xdiiq")
 
-[node name="HealthBar2" type="ProgressBar" parent="VBoxContainer"]
+[node name="HBoxContainerJ" type="HBoxContainer" parent="VBoxContainerHealth"]
 layout_mode = 2
-theme_override_fonts/font = SubResource("FontFile_ox0cq")
+
+[node name="LabelJ" type="Label" parent="VBoxContainerHealth/HBoxContainerJ"]
+layout_mode = 2
+text = "John     "
+
+[node name="HealthBarJ" type="ProgressBar" parent="VBoxContainerHealth/HBoxContainerJ"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+theme_override_fonts/font = SubResource("FontFile_qjfoq")
 theme_override_font_sizes/font_size = 14
-theme_override_styles/background = SubResource("StyleBoxFlat_wh5mg")
-theme_override_styles/fill = SubResource("StyleBoxFlat_fjbcm")
+theme_override_styles/background = SubResource("StyleBoxFlat_qjfoq")
+theme_override_styles/fill = SubResource("StyleBoxFlat_crjel")
 script = ExtResource("3_xdiiq")
 member_index = 1
 
-[node name="HealthBar3" type="ProgressBar" parent="VBoxContainer"]
+[node name="HBoxContainerD" type="HBoxContainer" parent="VBoxContainerHealth"]
 layout_mode = 2
-theme_override_fonts/font = SubResource("FontFile_86nmt")
+
+[node name="LabelD" type="Label" parent="VBoxContainerHealth/HBoxContainerD"]
+layout_mode = 2
+text = "David   "
+
+[node name="HealthBarD" type="ProgressBar" parent="VBoxContainerHealth/HBoxContainerD"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+theme_override_fonts/font = SubResource("FontFile_qjfoq")
 theme_override_font_sizes/font_size = 14
-theme_override_styles/background = SubResource("StyleBoxFlat_tkgvl")
-theme_override_styles/fill = SubResource("StyleBoxFlat_ig2of")
+theme_override_styles/background = SubResource("StyleBoxFlat_qjfoq")
+theme_override_styles/fill = SubResource("StyleBoxFlat_crjel")
 script = ExtResource("3_xdiiq")
 member_index = 2
 
-[node name="HealthBar4" type="ProgressBar" parent="VBoxContainer"]
+[node name="HBoxContainerM" type="HBoxContainer" parent="VBoxContainerHealth"]
 layout_mode = 2
-theme_override_fonts/font = SubResource("FontFile_j88hj")
+
+[node name="LabelM" type="Label" parent="VBoxContainerHealth/HBoxContainerM"]
+layout_mode = 2
+text = "Mark    "
+
+[node name="HealthBarM" type="ProgressBar" parent="VBoxContainerHealth/HBoxContainerM"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+theme_override_fonts/font = SubResource("FontFile_qjfoq")
 theme_override_font_sizes/font_size = 14
-theme_override_styles/background = SubResource("StyleBoxFlat_ev7tu")
-theme_override_styles/fill = SubResource("StyleBoxFlat_ox0cq")
+theme_override_styles/background = SubResource("StyleBoxFlat_qjfoq")
+theme_override_styles/fill = SubResource("StyleBoxFlat_crjel")
 script = ExtResource("3_xdiiq")
 member_index = 3
